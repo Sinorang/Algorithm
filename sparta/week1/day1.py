@@ -79,5 +79,3 @@ print(f"가장 많이 나온 숫자는 {number}이고, {count}번 나왔어요!"
 print("\n두 번째 방법(빠른 방법)의 결과:")
 number, count = find_most_frequent_number_optimal(numbers)
 print(f"가장 많이 나온 숫자는 {number}이고, {count}번 나왔어요!")
-
-# commit test
