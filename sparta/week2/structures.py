@@ -20,10 +20,26 @@ class LinkedList:
         node.next = ListNode(val, None)
 
 
-ln = LinkedList()
+class Node:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = None
 
-ln.append(3)
-ln.append(5)
-ln.append(7)
 
-print(ln)
+class Stack:
+    def __init__(self):
+        self.top = None
+
+    def push(self, val):
+        self.top = Node(val, self.top)
+
+    def pop(self):
+        if not self.top:
+            return None
+
+        node = self.top
+        self.top = node.next
+        return node.val
+
+    def is_empty(self):
+        return self.top is None
